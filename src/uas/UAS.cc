@@ -1914,6 +1914,10 @@ QImage UAS::getImage()
     return image;
 }
 
+quint64 UAS::getImageStart(){
+    return imageStart;
+}
+
 void UAS::requestImage()
 {
     qDebug() << "trying to get an image from the uas...";

@@ -609,6 +609,7 @@ public:
     }
 
     QImage getImage();
+    quint64 getImageStart();
     void requestImage();
     int getAutopilotType(){
         return autopilot;
