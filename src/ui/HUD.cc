@@ -1368,7 +1368,7 @@ void HUD::copyImage(UASInterface* uas)
             // Save to directory if logging is enabled
             if (imageLoggingEnabled)
             {
-                temp_im.save(QString("%1/%2.png").arg(imageLogDirectory).arg(u->getImageStart()));
+                temp_im.save(QString("%1/%2_%3.png").arg(imageLogDirectory).arg(imageLogCounter, 4, 10, QChar('0')).arg(u->getImageStart()));
                 imageLogCounter++;
             }
         }
